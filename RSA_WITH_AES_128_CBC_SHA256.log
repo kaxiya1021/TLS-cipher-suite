@@ -1,0 +1,269 @@
+/home/user/.sdkman/candidates/java/17.0.11-kona/bin/java -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=39417:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8 -classpath /home/user/IdeaProjects/test/target/classes:/home/user/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/home/user/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/home/user/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/user/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.23/jmh-generator-annprocess-1.23.jar org.example.TLSCipherSuiteBenchmark
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=39417:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSCipherSuiteBenchmark.testECDHECPUUsage
+
+# Run progress: 0.00% complete, ETA 00:13:20
+# Fork: 1 of 1
+# Warmup Iteration   1: 150.361 ms/op
+# Warmup Iteration   2: 147.091 ms/op
+# Warmup Iteration   3: 142.756 ms/op
+# Warmup Iteration   4: 146.964 ms/op
+# Warmup Iteration   5: 142.821 ms/op
+Iteration   1: 146.447 ms/op
+Iteration   2: 143.020 ms/op
+Iteration   3: 142.332 ms/op
+Iteration   4: 154.209 ms/op
+Iteration   5: 3520.556 ms/op
+
+
+Result "org.example.TLSCipherSuiteBenchmark.testECDHECPUUsage":
+  821.313 ±(99.9%) 5810.353 ms/op [Average]
+  (min, avg, max) = (142.332, 821.313, 3520.556), stdev = 1508.930
+  CI (99.9%): [≈ 0, 6631.665] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=39417:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSCipherSuiteBenchmark.testECDHEConnection
+
+# Run progress: 12.50% complete, ETA 00:11:59
+# Fork: 1 of 1
+# Warmup Iteration   1: 20083.982 ms/op
+# Warmup Iteration   2: 0.119 ms/op
+# Warmup Iteration   3: 165.504 ms/op
+# Warmup Iteration   4: 142.656 ms/op
+# Warmup Iteration   5: 137.048 ms/op
+Iteration   1: 140.798 ms/op
+Iteration   2: 137.794 ms/op
+Iteration   3: 134.682 ms/op
+Iteration   4: 132.880 ms/op
+Iteration   5: 134.289 ms/op
+
+
+Result "org.example.TLSCipherSuiteBenchmark.testECDHEConnection":
+  136.089 ±(99.9%) 12.269 ms/op [Average]
+  (min, avg, max) = (132.880, 136.089, 140.798), stdev = 3.186
+  CI (99.9%): [123.820, 148.357] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=39417:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSCipherSuiteBenchmark.testECDHEDataTransfer
+
+# Run progress: 25.00% complete, ETA 00:10:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 278.082 ms/op
+# Warmup Iteration   2: 255.844 ms/op
+# Warmup Iteration   3: 845.325 ms/op
+# Warmup Iteration   4: 259.905 ms/op
+# Warmup Iteration   5: 256.722 ms/op
+Iteration   1: 269.612 ms/op
+Iteration   2: 253.378 ms/op
+Iteration   3: 365.264 ms/op
+Iteration   4: 259.253 ms/op
+Iteration   5: 258.816 ms/op
+
+
+Result "org.example.TLSCipherSuiteBenchmark.testECDHEDataTransfer":
+  281.265 ±(99.9%) 182.223 ms/op [Average]
+  (min, avg, max) = (253.378, 281.265, 365.264), stdev = 47.323
+  CI (99.9%): [99.042, 463.488] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=39417:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSCipherSuiteBenchmark.testECDHEMemoryUsage
+
+# Run progress: 37.50% complete, ETA 00:09:24
+# Fork: 1 of 1
+# Warmup Iteration   1: 149.071 ms/op
+# Warmup Iteration   2: 133.967 ms/op
+# Warmup Iteration   3: 137.013 ms/op
+# Warmup Iteration   4: 539.854 ms/op
+# Warmup Iteration   5: 279.122 ms/op
+Iteration   1: 142.651 ms/op
+Iteration   2: 136.596 ms/op
+Iteration   3: 3218.256 ms/op
+Iteration   4: 173.654 ms/op
+Iteration   5: 146.885 ms/op
+
+
+Result "org.example.TLSCipherSuiteBenchmark.testECDHEMemoryUsage":
+  763.608 ±(99.9%) 5284.096 ms/op [Average]
+  (min, avg, max) = (136.596, 763.608, 3218.256), stdev = 1372.263
+  CI (99.9%): [≈ 0, 6047.704] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=39417:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSCipherSuiteBenchmark.testFFDHECPUUsage
+
+# Run progress: 50.00% complete, ETA 00:07:47
+# Fork: 1 of 1
+# Warmup Iteration   1: 162.475 ms/op
+# Warmup Iteration   2: 144.668 ms/op
+# Warmup Iteration   3: 138.871 ms/op
+# Warmup Iteration   4: 142.723 ms/op
+# Warmup Iteration   5: 146.227 ms/op
+Iteration   1: 146.577 ms/op
+Iteration   2: 144.401 ms/op
+Iteration   3: 496.583 ms/op
+Iteration   4: 466.828 ms/op
+Iteration   5: 140.762 ms/op
+
+
+Result "org.example.TLSCipherSuiteBenchmark.testFFDHECPUUsage":
+  279.030 ±(99.9%) 713.629 ms/op [Average]
+  (min, avg, max) = (140.762, 279.030, 496.583), stdev = 185.327
+  CI (99.9%): [≈ 0, 992.659] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=39417:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSCipherSuiteBenchmark.testFFDHEConnection
+
+# Run progress: 62.50% complete, ETA 00:05:53
+# Fork: 1 of 1
+# Warmup Iteration   1: 159.152 ms/op
+# Warmup Iteration   2: 138.965 ms/op
+# Warmup Iteration   3: 138.043 ms/op
+# Warmup Iteration   4: 145.107 ms/op
+# Warmup Iteration   5: 138.945 ms/op
+Iteration   1: 134.375 ms/op
+Iteration   2: 133.723 ms/op
+Iteration   3: 137.363 ms/op
+Iteration   4: 521.947 ms/op
+Iteration   5: 132.584 ms/op
+
+
+Result "org.example.TLSCipherSuiteBenchmark.testFFDHEConnection":
+  211.998 ±(99.9%) 667.222 ms/op [Average]
+  (min, avg, max) = (132.584, 211.998, 521.947), stdev = 173.275
+  CI (99.9%): [≈ 0, 879.220] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=39417:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSCipherSuiteBenchmark.testFFDHEDataTransfer
+
+# Run progress: 75.00% complete, ETA 00:03:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 276.101 ms/op
+# Warmup Iteration   2: 267.501 ms/op
+# Warmup Iteration   3: 260.635 ms/op
+# Warmup Iteration   4: 295.161 ms/op
+# Warmup Iteration   5: 263.532 ms/op
+Iteration   1: 264.649 ms/op
+Iteration   2: 263.289 ms/op
+Iteration   3: 267.367 ms/op
+Iteration   4: 261.844 ms/op
+Iteration   5: 263.712 ms/op
+
+
+Result "org.example.TLSCipherSuiteBenchmark.testFFDHEDataTransfer":
+  264.172 ±(99.9%) 7.903 ms/op [Average]
+  (min, avg, max) = (261.844, 264.172, 267.367), stdev = 2.052
+  CI (99.9%): [256.269, 272.075] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=39417:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSCipherSuiteBenchmark.testFFDHEMemoryUsage
+
+# Run progress: 87.50% complete, ETA 00:01:56
+# Fork: 1 of 1
+# Warmup Iteration   1: 156.502 ms/op
+# Warmup Iteration   2: 139.088 ms/op
+# Warmup Iteration   3: 139.412 ms/op
+# Warmup Iteration   4: 139.186 ms/op
+# Warmup Iteration   5: 134.542 ms/op
+Iteration   1: 143.226 ms/op
+Iteration   2: 339.510 ms/op
+Iteration   3: 138.734 ms/op
+Iteration   4: 161.381 ms/op
+Iteration   5: 170.933 ms/op
+
+
+Result "org.example.TLSCipherSuiteBenchmark.testFFDHEMemoryUsage":
+  190.757 ±(99.9%) 324.170 ms/op [Average]
+  (min, avg, max) = (138.734, 190.757, 339.510), stdev = 84.186
+  CI (99.9%): [≈ 0, 514.927] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:15:29
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                      Mode  Cnt    Score      Error  Units
+TLSCipherSuiteBenchmark.testECDHECPUUsage      avgt    5  821.313 ± 5810.353  ms/op
+TLSCipherSuiteBenchmark.testECDHEConnection    avgt    5  136.089 ±   12.269  ms/op
+TLSCipherSuiteBenchmark.testECDHEDataTransfer  avgt    5  281.265 ±  182.223  ms/op
+TLSCipherSuiteBenchmark.testECDHEMemoryUsage   avgt    5  763.608 ± 5284.096  ms/op
+TLSCipherSuiteBenchmark.testFFDHECPUUsage      avgt    5  279.030 ±  713.629  ms/op
+TLSCipherSuiteBenchmark.testFFDHEConnection    avgt    5  211.998 ±  667.222  ms/op
+TLSCipherSuiteBenchmark.testFFDHEDataTransfer  avgt    5  264.172 ±    7.903  ms/op
+TLSCipherSuiteBenchmark.testFFDHEMemoryUsage   avgt    5  190.757 ±  324.170  ms/op
+
+Process finished with exit code 0
+
