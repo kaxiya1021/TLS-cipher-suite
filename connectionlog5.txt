@@ -1,0 +1,210 @@
+/home/user/.sdkman/candidates/java/17.0.11-kona/bin/java -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=40589:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8 -classpath /home/user/IdeaProjects/test/target/classes:/home/user/.m2/repository/org/openjdk/jmh/jmh-core/1.23/jmh-core-1.23.jar:/home/user/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar:/home/user/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar:/home/user/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.23/jmh-generator-annprocess-1.23.jar org.example.TLSBenchmark
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=40589:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSBenchmark.testConnection
+# Parameters: (cipherSuite = TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256)
+
+# Run progress: 0.00% complete, ETA 00:10:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 58.312 ms/op
+# Warmup Iteration   2: 57.939 ms/op
+# Warmup Iteration   3: 56.911 ms/op
+# Warmup Iteration   4: 57.653 ms/op
+# Warmup Iteration   5: 56.670 ms/op
+Iteration   1: 57.624 ms/op
+Iteration   2: 58.426 ms/op
+Iteration   3: 60.016 ms/op
+Iteration   4: 61.901 ms/op
+Iteration   5: 59.362 ms/op
+
+
+Result "org.example.TLSBenchmark.testConnection":
+  59.466 ±(99.9%) 6.304 ms/op [Average]
+  (min, avg, max) = (57.624, 59.466, 61.901), stdev = 1.637
+  CI (99.9%): [53.162, 65.770] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=40589:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSBenchmark.testConnection
+# Parameters: (cipherSuite = TLS_DHE_RSA_WITH_AES_128_GCM_SHA256)
+
+# Run progress: 16.67% complete, ETA 00:08:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 62.559 ms/op
+# Warmup Iteration   2: 61.798 ms/op
+# Warmup Iteration   3: 63.950 ms/op
+# Warmup Iteration   4: 61.646 ms/op
+# Warmup Iteration   5: 68.171 ms/op
+Iteration   1: 83.140 ms/op
+Iteration   2: 85.596 ms/op
+Iteration   3: 59.652 ms/op
+Iteration   4: 63.431 ms/op
+Iteration   5: 69.209 ms/op
+
+
+Result "org.example.TLSBenchmark.testConnection":
+  72.206 ±(99.9%) 44.840 ms/op [Average]
+  (min, avg, max) = (59.652, 72.206, 85.596), stdev = 11.645
+  CI (99.9%): [27.365, 117.046] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=40589:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSBenchmark.testConnection
+# Parameters: (cipherSuite = TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384)
+
+# Run progress: 33.33% complete, ETA 00:06:46
+# Fork: 1 of 1
+# Warmup Iteration   1: 70.359 ms/op
+# Warmup Iteration   2: 65.152 ms/op
+# Warmup Iteration   3: 61.285 ms/op
+# Warmup Iteration   4: 61.851 ms/op
+# Warmup Iteration   5: 62.737 ms/op
+Iteration   1: 61.161 ms/op
+Iteration   2: 57.607 ms/op
+Iteration   3: 58.667 ms/op
+Iteration   4: 58.171 ms/op
+Iteration   5: 61.368 ms/op
+
+
+Result "org.example.TLSBenchmark.testConnection":
+  59.395 ±(99.9%) 6.735 ms/op [Average]
+  (min, avg, max) = (57.607, 59.395, 61.368), stdev = 1.749
+  CI (99.9%): [52.660, 66.130] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=40589:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSBenchmark.testConnection
+# Parameters: (cipherSuite = TLS_DHE_RSA_WITH_AES_256_GCM_SHA384)
+
+# Run progress: 50.00% complete, ETA 00:05:04
+# Fork: 1 of 1
+# Warmup Iteration   1: 58.958 ms/op
+# Warmup Iteration   2: 59.608 ms/op
+# Warmup Iteration   3: 58.332 ms/op
+# Warmup Iteration   4: 58.357 ms/op
+# Warmup Iteration   5: 59.956 ms/op
+Iteration   1: 56.778 ms/op
+Iteration   2: 59.963 ms/op
+Iteration   3: 58.018 ms/op
+Iteration   4: 57.548 ms/op
+Iteration   5: 57.081 ms/op
+
+
+Result "org.example.TLSBenchmark.testConnection":
+  57.878 ±(99.9%) 4.841 ms/op [Average]
+  (min, avg, max) = (56.778, 57.878, 59.963), stdev = 1.257
+  CI (99.9%): [53.037, 62.718] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=40589:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSBenchmark.testConnection
+# Parameters: (cipherSuite = TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256)
+
+# Run progress: 66.67% complete, ETA 00:03:22
+# Fork: 1 of 1
+# Warmup Iteration   1: 58.888 ms/op
+# Warmup Iteration   2: 59.388 ms/op
+# Warmup Iteration   3: 62.131 ms/op
+# Warmup Iteration   4: 61.734 ms/op
+# Warmup Iteration   5: 62.068 ms/op
+Iteration   1: 65.294 ms/op
+Iteration   2: 58.231 ms/op
+Iteration   3: 65.803 ms/op
+Iteration   4: 66.308 ms/op
+Iteration   5: 74.845 ms/op
+
+
+Result "org.example.TLSBenchmark.testConnection":
+  66.096 ±(99.9%) 22.714 ms/op [Average]
+  (min, avg, max) = (58.231, 66.096, 74.845), stdev = 5.899
+  CI (99.9%): [43.382, 88.810] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 17.0.11, OpenJDK 64-Bit Server VM, 17.0.11+1-LTS
+# VM invoker: /home/user/.sdkman/candidates/java/17.0.11-kona/bin/java
+# VM options: -javaagent:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/lib/idea_rt.jar=40589:/home/user/ideaIU-2024.1.4/idea-IU-241.18034.62/bin -Dfile.encoding=UTF-8
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.TLSBenchmark.testConnection
+# Parameters: (cipherSuite = TLS_DHE_RSA_WITH_AES_128_CBC_SHA256)
+
+# Run progress: 83.33% complete, ETA 00:01:41
+# Fork: 1 of 1
+# Warmup Iteration   1: 70.595 ms/op
+# Warmup Iteration   2: 76.608 ms/op
+# Warmup Iteration   3: 84.800 ms/op
+# Warmup Iteration   4: 61.785 ms/op
+# Warmup Iteration   5: 60.291 ms/op
+Iteration   1: 56.355 ms/op
+Iteration   2: 58.354 ms/op
+Iteration   3: 58.143 ms/op
+Iteration   4: 57.839 ms/op
+Iteration   5: 57.703 ms/op
+
+
+Result "org.example.TLSBenchmark.testConnection":
+  57.679 ±(99.9%) 3.014 ms/op [Average]
+  (min, avg, max) = (56.355, 57.679, 58.354), stdev = 0.783
+  CI (99.9%): [54.665, 60.693] (assumes normal distribution)
+
+
+# Run complete. Total time: 00:10:08
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                            (cipherSuite)  Mode  Cnt   Score    Error  Units
+TLSBenchmark.testConnection  TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256  avgt    5  59.466 ±  6.304  ms/op
+TLSBenchmark.testConnection    TLS_DHE_RSA_WITH_AES_128_GCM_SHA256  avgt    5  72.206 ± 44.840  ms/op
+TLSBenchmark.testConnection  TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384  avgt    5  59.395 ±  6.735  ms/op
+TLSBenchmark.testConnection    TLS_DHE_RSA_WITH_AES_256_GCM_SHA384  avgt    5  57.878 ±  4.841  ms/op
+TLSBenchmark.testConnection  TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256  avgt    5  66.096 ± 22.714  ms/op
+TLSBenchmark.testConnection    TLS_DHE_RSA_WITH_AES_128_CBC_SHA256  avgt    5  57.679 ±  3.014  ms/op
+
+Process finished with exit code 0
